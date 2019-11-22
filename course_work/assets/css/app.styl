@@ -1,0 +1,608 @@
+@import '~vuetify/src/stylus/main'
+.full-width
+  display flex
+  flex-direction column
+  width 100%
+  min-height 100vh
+  font-family sans-serif
+  background-image url('/static/img/pattern.png')
+  background-repeat: repeat;
+
+.center-content
+  ddisplay flex
+  djustify-content center
+  dalign-items center
+
+.container-fluid
+  padding 0
+
+a
+  color black !important
+
+.theme-bg
+  background-color rgb(228, 30, 135)
+
+.theme-color
+  color rgb(228, 30, 135)
+
+.center
+  text-align center
+
+.bold
+  font-weight bold
+
+.gray
+  color gray
+
+.dark-gray
+  color #6d6d6d
+
+.router-link-exact-active
+  color #1eb6e4 !important
+
+.pointer
+  cursor pointer
+
+.fit-content
+  width fit-content
+
+.inline
+  display inline
+
+.signup-color
+  color white
+  border-radius 30px
+  padding 7px 12px 7px 12px
+  margin-left 10px
+
+.border-1 {
+  box-shadow: rgba(176, 176, 176, 0.8) 0px 0px 4px 0px;
+}
+
+.border-2 {
+  box-shadow: rgba(176, 176, 176, 1) 0px 0px 4px 0px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+//=========================== HEADER
+
+.header
+  display flex
+  flex-drection row
+  flex-wrap wrap
+  justify-content space-around
+  align-items center
+  padding-left 30px !important
+  padding-right 30px !important
+  padding .5vw 5vw
+  margin-bottom 5vh
+
+.header > div
+  padding 10px 0
+
+.header .item1
+  display flex
+  flex-direction row
+  align-items center
+
+.header img
+  width 4vw
+  min-width 50px
+  display inline
+
+.header .name
+  color #1eb6e4
+  font-weight bold
+  width 100px
+
+.header .item2
+  display flex
+  flex-direction row
+  font-weight bold
+  margin-left auto
+  margin-right auto
+
+.header .item2 a
+  padding 0 1vw
+
+.header .item3
+  display flex
+  flex-direction row
+
+.header .item3 span, .header .item3 div
+  font-weight bold
+  padding .5vw 3vh
+  border-radius 1.5vw
+  display inline
+
+.header .item3 span:nth-last-child(1)
+  background-color #1eb6e4
+  color white
+
+.header .form label, .header .form input
+  padding-left 20px
+
+//=========================== FOOTER
+
+.footer-container
+  margin-top auto
+
+.footer
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  justify-content space-around
+  padding .5vw 5vw
+
+.footer > div
+  margin 10px 10px
+
+.footer img
+  width 4vw
+  min-width 50px
+  margin-bottom 15px
+
+.footer .item1
+  color gray
+  font-size 16px
+  width 170px
+
+.footer .item1 p
+  opacity 0.7
+
+.footer .item2
+  display flex
+  flex-direction row
+  justify-content space-between
+  width 400px
+
+.footer .col-flex
+  display flex
+  flex-direction column
+  color gray
+  font-weight bold
+
+.footer .col-flex span
+  margin-bottom 15px
+
+.footer .item3
+  display flex
+  flex-direction row
+  justify-content space-around
+  font-size 22px
+  font-weight bold
+  width: 250px
+  color gray
+
+.copyright
+  text-align center
+  color gray
+
+//=========================== DELIVERY
+
+.delivery
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  padding 5vh 0
+
+.delivery .delivery-msg
+  text-align center
+  margin-bottom 2vh
+
+.delivery .delivery-msg h2
+  font-weight bold
+
+.delivery .delivery-form
+  display flex
+  flex-direction row
+  height 42px
+  border-radius 5vh
+  width 310px
+  overflow hidden
+  border 1px solid gray
+
+.delivery input
+  border 0
+  flex-grow 1
+  padding-left 10px
+  height 100%
+
+.delivery button
+  height 100%
+  border 0
+  background-color #1eb6e4
+  color white
+  padding 0 15px
+
+.delivery-address
+  text-align center
+  font-weight bold
+  font-size 15px
+  padding 1vh 0 0 0
+
+.delivery-address p:nth-child(1)
+  color: #1eb6e4;
+  margin-bottom 0
+
+//=========================== SLIDER
+
+.slider-container 
+  text-align center
+
+.home-slider 
+  margin-bottom 5vh
+  margin-left: auto
+  margin-right auto
+  height 40vh !important
+  width 98vw !important
+
+//=========================== BLOG
+
+.blog-head
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+.blog-head h1
+  text-align center
+  padding 2vh 0
+
+.blog-cover
+  width 75vw
+  height 45vh
+  overflow hidden
+
+.blog-single-article-cover
+  width 100vw
+  height 45vh
+  overflow hidden
+  background-image url('/static/img/blog-cover.jpg')
+  background-position center
+  background-size cover
+
+.blogs-container
+  width 75vw
+  padding 5vh 0
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  justify-content space-around
+
+.blog-cover
+  background-image url('/static/img/blog-cover.jpg')
+  background-position center
+  background-size cover
+
+.blog-item
+  width 49%
+  min-width 300px
+  margin-bottom 1vh
+  padding 1vw 2vw
+
+.pink
+  color #ef2f62
+  opacity 0.8
+
+.purple
+  color purple
+
+.item-interactions
+  display flex
+  flex-direction row
+
+.item-interactions span
+  margin-right 15px
+
+.item-interactions span:nth-child(3)
+  margin-left auto
+  margin-right 0
+  color gray
+
+//=========================== SUPPORT
+
+.support
+  padding 7vh 0
+
+.support h1
+  text-align center
+  padding-bottom 4vh
+
+.support-flex
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  justify-content center
+  padding 3vh 0
+
+.support-flex .contact, .support-flex .email
+  flex-grow 1
+  padding 2vh 2vw
+  width fit-content
+  min-width 300px
+  margin 10px 10px
+
+.contact h4, .email h4
+  text-align center
+  padding 2vh 0
+
+.support .flex-row
+  display flex
+  flex-direction row
+  justify-content space-around
+
+.support .flex-row div
+  width 50%
+  padding 0 1vw
+
+.support .email div
+  background-color #efefef
+
+.support input, .support label
+  padding 0 16px !important
+
+.support label-16 label
+  left 0 !important
+
+//=========================== SUPPORT
+
+.shop-container .content
+  padding 10vh 0
+
+.shop-container .content > h1
+  text-align center
+  padding-bottom 4vh
+
+.shop-container .content .cat-flex
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  justify-content space-around
+  width 60vw
+  margin-left auto
+  margin-right auto
+
+.shop-container .content .cat-flex > div
+  width 30%
+  min-width 200px
+  padding 2vh 1vw
+  margin-bottom 2vh
+  text-align center
+  background-color #ffeff6 
+
+.shop-container .content .cat-flex > div:nth-child(odd)
+  background-color #edffee
+
+.shop-container .content .cat-flex > div > img
+  width 50%
+
+.shop-container .content .cat-flex > div > h1
+  font-size 25px
+
+.shop-container .content .cat-flex > div > button
+  border-radius 100px
+  padding-left 20px
+  padding-right 20px
+
+// ======================Terms and conditions
+.term-head
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+.term-head h2
+  text-align center
+  margin-bottom 30px
+
+
+.terms-cover
+  width 75vw
+  height 50vh
+  overflow hidden
+  background rgb(237, 0, 140)
+
+.terms-cover-content
+  color white
+  height 50vh
+  display flex
+  flex-direction column
+  justify-content center
+  width 50vw
+  margin-left 5%
+
+.terms-container
+  display flex
+  justify-content flex-start
+  width 76%
+  flex-direction column
+  margin 40px 0px
+
+@media only screen and (min-width: 640px) {
+  .terms-container {
+    padding-right: 18vw;
+  }
+}
+// ========================= Aboutus
+
+.about-head
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+.about-head h2
+  text-align center
+  padding-bottom 25px
+
+
+.about-cover
+  width 75vw
+  height 50vh
+  overflow hidden
+  background rgb(237, 0, 140)
+
+.about-cover-content
+  color white
+  height 50vh
+  display flex
+  flex-direction column
+  justify-content center
+  width 50vw
+  margin-left 5%
+
+.about-container
+  display flex
+  justify-content flex-start
+  width 70vw
+  flex-direction column
+  margin-top 40px
+  
+@media only screen and (min-width: 640px) {
+    .about-container {
+      padding-right: 18vw;
+    }
+}
+//===================== Help
+
+.help
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  padding 5vh 0
+
+.help .help-form
+  display flex
+  flex-direction row
+  height 5vh
+  background white
+  color gray
+  border-radius 5vh
+  width 30vw
+  overflow hidden
+  border 1px solid gray
+
+.help input
+  border 0
+  flex-grow 1
+  padding-left: 50px
+  height 100%
+
+.help button
+  height 100%
+  border 0
+  background-color black
+  color white
+  padding 0 15px
+
+.help-head
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+
+.help-head h2
+  text-align center
+  margin-bottom 25px
+
+
+.help-cover
+  width 75vw
+  height 40vh
+  overflow hidden
+  background rgb(237, 0, 140)
+
+.help-cover-content
+  color white
+  height 40vh
+  display flex
+  flex-direction column
+  justify-content center
+  width 70vw
+  margin-left 5%
+
+.help-container
+  display flex
+  justify-content center
+  flex-direction row
+  margin 40px 0
+
+.help-item
+  width 250px
+  text-align center
+  padding 4vh 0
+  margin 1vh 2vw
+
+.help-item h2 
+  margin-bottom 10px
+
+  //================== blog single article
+
+.blog-article
+  margin-top 5vw
+
+.blog-article-content
+  display flex
+  justify-content flex-start
+  width 65vw
+  flex-direction column
+
+.blog-article-head
+  display flex
+  justify-content flex-start
+  width 65vw
+  flex-direction row
+  color gray
+
+.category-cover
+  width 75vw
+  height 40vh
+  overflow hidden
+
+.category-cover
+  background-image url('/static/img/blog-cover.jpg')
+  background-position center
+  background-size cover
+
+.category-head
+  display flex
+  justify-content center
+  flex-direction column
+  align-items center
+
+// =================== home drop down allignment
+.dropdown-hea
+  background-color white
+
+// =================== boarding
+.boarding
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  padding 5vh 0
+
+// MISC
+
+.swiper-slide
+  width 200px
+  margin-top 10px
+  margin-bottom 10px
+  padding 10px
+
+.sticky
+  position fixed !important
+  top 0
+  background-color rgb(247, 247, 249)
+
+.content
+  margin-top 5vh
