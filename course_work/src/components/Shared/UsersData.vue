@@ -70,27 +70,10 @@
       :sort-direction="sortDirection"
       @filtered="onFiltered"
     >
-      <template v-slot:cell(name)="row">
-        {{ row.value.Topic }}
-      </template>
-
-      <template v-slot:cell(actions)="row">
-        <b-button size="sm" @click="row.toggleDetails">
-          {{ row.detailsShowing ? 'Hide' : 'Show' }} Details
-        </b-button>
-      </template>
-
       <template v-slot:cell(rating)="row">
-        <star-rating v-bind:star-size="20" v-model="row.value"></star-rating>
+        <star-rating v-if="row" v-bind:star-size="20" v-model="row.value"></star-rating>
       </template>
 
-      <template v-slot:row-details="row">
-        <b-card>
-          <ul>
-            <li v-for="(value, key) in row.item" :key="key">{{ key }}: {{ value }}</li>
-          </ul>
-        </b-card>
-      </template>
     </b-table>
 
     <b-row>
@@ -137,30 +120,29 @@ export default {
   data() {
     return {
       items: [
-        { Location: 'class a', price: 40, name: { Topic: 'laravel' }, time: '4:00pm 1hour', rating: 4 },
-        { Location: 'class b', price: 21, name: { Topic: 'vue' }, time: '5:00pm 1hour', rating: 3 },
+        { Location: 'class a', price: 40, name:  'laravel', time: '4:00pm 1hour', rating: 4 },
+        { Location: 'class b', price: 21, name:  'vue', time: '5:00pm 1hour', rating: 3 },
         {
           Location: 'class c',
           price: 9,
-          name: { Topic: 'angular'},
-          _rowVariant: 'success',
+          name:  'angular',
           time: '1:00pm 1hour',
           rating: 2
         },
-        { Location: 'class d', price: 89, name: { Topic: 'math' }, time: '2:00pm 1hour', rating: 1 },
-        { Location:'class e', price: 38, name: { Topic: 'english'}, time: '3:00pm 1hour', rating: 5 },
-        { Location: 'class f', price: 27, name: { Topic: 'science'}, time: '10:00am 1hour', rating: 2 },
-        { Location: 'class g', price: 40, name: { Topic: 'physics'}, time: '11:00am 1hour', rating: 3 },
+        { Location: 'class d', price: 89, name:  'math', time: '2:00pm 1hour', rating: 1 },
+        { Location:'class e', price: 38, name:  'english', time: '3:00pm 1hour', rating: 5 },
+        { Location: 'class f', price: 27, name:  'science', time: '10:00am 1hour', rating: 2 },
+        { Location: 'class g', price: 40, name:  'physics', time: '11:00am 1hour', rating: 3 },
         {
           Location: 'class h',
           price: 87,
-          name: { Topic: 'chemistry'},
-          _cellVariants: { price: 'danger', Location: 'warning' }, time: '12:00am 1hour', rating: 4
+          name:  'chemistry',
+          time: '12:00am 1hour', rating: 4
         },
-        { Location: 'class i', price: 26, name: { Topic: 'topology'}, time: '1:00pm 1hour', rating: 2 },
-        { Location: 'class j', price: 22, name: { Topic: 'programming'}, time: '2:00pm 1hour', rating: 3 },
-        { Location: 'class k', price: 38, name: { Topic: 'AOA'}, time: '3:00pm 1hour', rating: 1 },
-        { Location: 'class l', price: 29, name: { Topic: 'S2C'}, time: '4:00pm 1hour', rating: 3 }
+        { Location: 'class i', price: 26, name:  'topology', time: '1:00pm 1hour', rating: 2 },
+        { Location: 'class j', price: 22, name:  'programming', time: '2:00pm 1hour', rating: 3 },
+        { Location: 'class k', price: 38, name:  'AOA', time: '3:00pm 1hour', rating: 1 },
+        { Location: 'class l', price: 29, name:  'S2C', time: '4:00pm 1hour', rating: 3 }
       ],
       fields: [
         { key: 'name', label: 'Topic', sortable: true, sortDirection: 'desc' },
