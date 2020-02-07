@@ -3,7 +3,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
-import bcrypt from "bcryptjs";
+import bcrypt from "bcryptjs"; // encrypt pass 
 import { mongoURL } from '../config'
 import bcryptSaltRounds from '../config'
 
