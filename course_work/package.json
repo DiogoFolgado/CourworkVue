@@ -13,7 +13,7 @@
     "node.js",
     "express.js"
   ],
-  "author": "Muhammad Zia",
+  "author": "Diogo Pereira",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.1.5",
